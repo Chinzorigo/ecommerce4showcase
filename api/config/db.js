@@ -1,6 +1,7 @@
 const { ServerApiVersion } = require('mongodb');
 const mongoose = require("mongoose");
 
+//connectDB
 
 const connectDB = async () => {
   const conn = await mongoose.connect(process.env.MONGODB_URI, {
